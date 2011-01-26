@@ -6,3 +6,6 @@
 *.swo
 *.swp
 *.vim
+build/
+dist/
+psdeploy.egg-info/
