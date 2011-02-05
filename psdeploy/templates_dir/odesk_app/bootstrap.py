@@ -59,7 +59,7 @@ def pass_control_to_fabric(ve_target):
     try:
         import fabfile
     except ImportError:
-        pass
+        return
 
     if hasattr(fabfile, 'bootstrap'):
         fab = os.path.join(ve_target, 'bin', 'fab')
