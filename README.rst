@@ -35,7 +35,7 @@ install basic requirements::
 
     cd myapp
     git init
-    pip install -r requirements.txt
+    python bootstrap.py
 
 .. note::
     Please note that `local_settings.py` will be ignored by `git`
