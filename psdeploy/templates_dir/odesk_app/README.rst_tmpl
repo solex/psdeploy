@@ -11,6 +11,8 @@ Install all necessary packages with::
 
 Create `local_settings.py` file. (Use `local_settings.py.def` as a template)
 
+Don't forget to set your oDesk keys!
+
 Run::
 
     python manage.py syncdb --noinput

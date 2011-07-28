@@ -14,7 +14,8 @@ class OdeskAppTemplate(Template):
         secret_key = ''.join([random.choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
         self.vars += [
             var('secret_key', 'Secret key for Django settings', default=secret_key),
-            var('media_dir', 'Name of the media directory', default='media'),
+            var('static_dir', 'Name of the directory that will hold statis files', default='static'),
+            var('media_dir', 'Name of the directory that will hold user-uploaded files', default='media'),
             var('templates_dir', 'Directory to hold base templates', default='templates'),
             var('odesk_admin', 'Enter your oDesk username, so you could access the admin', default=NoDefault),
         ]
